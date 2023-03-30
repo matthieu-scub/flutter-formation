@@ -26,15 +26,16 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Scaffold Example',
-      // Prêt à jouer avec le widget Scaffold
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My App'),
-        ),
-        body: const Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('My App'),
+          ),
+          // Prêt à jouer avec le widget Scaffold
+          body: const Scaffold(
+            body: Center(
+              child: Text('Hello World!'),
+            ),
+          )),
     );
   }
 }
